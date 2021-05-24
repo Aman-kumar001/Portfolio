@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Lufga';
+    src: local('Lufga Bold'), local('Lufga-Bold'),
+        url('Lufga-Bold.woff2') format('woff2'),
+        url('Lufga-Bold.woff') format('woff'),
+        url('Lufga-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }

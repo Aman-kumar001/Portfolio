@@ -1,0 +1,74 @@
+.about{
+    margin: auto;
+    width: 90%;
+    animation: appear 1s forwards;
+    transform-origin: 0 0;
+}
+@keyframes appear{
+    0%{transform: rotateX(90deg);}
+    100%{transform: rotateX(0deg);}
+  }
+  .about .short, .long{
+    margin: auto;
+    width: 70%;
+  }
+  .about .short h1{
+    font-size: 40px;
+    color:#ff6a6a;
+  }
+  .about .long h1{
+    font-size: 40px;
+    color:#ff6a6a;
+  }
+  .about .story{
+      margin-bottom: 80px;
+  }
+  .about hr{
+      width:60%;
+      margin-bottom: 80px;
+  }
+  .short p,.long p{
+      font-size: larger;
+  }
+  .about .icons{
+    text-align: center;
+    width:100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    column-gap: 16%;
+  }
+  .about .label{
+    margin: auto;
+    width:80%;
+    margin-bottom: 70px;
+  }
+  .about .label h2{
+    flex-grow: 1;
+  }
+  .about hr{
+    margin-top: 80px;
+  }
+  .para{
+    font-family: "Lufga-Light";
+    letter-spacing: 2px;
+    width:80%;
+    margin: auto;
+  }
+  .para p{
+    font-size: x-large;
+  }
+  .para :hover > a{
+    color:#ff6a6a;
+  }
+  .landing{
+    /* border:1px solid white; */
+    width:45%;
+  }
+  .contact{
+    text-align: center;
+    position: relative;
+    top:5%;
+    font-size: larger;
+    margin-bottom: -50px;
+  }
