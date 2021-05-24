@@ -27,6 +27,16 @@ const styles=makeStyles({
         position:"relative",
         top:"50%"
     },
+    span1:{
+        // backgroundColor:"white",
+        backgroundColor:"black",
+        fontSize:"35px",
+        marginRight:"30px",
+        // border:"1px solid black",
+        color:"white",
+        position:"relative",
+        top:"50%"
+    },
     top:{
         backgroundColor:"black",
         fontSize:"80px",
@@ -47,6 +57,16 @@ const styles=makeStyles({
             position:"relative",
             top:"50%"
         },
+        span1:{
+            // backgroundColor:"white",
+            backgroundColor:"black",
+            fontSize:"33px",
+            marginRight:"30px",
+            // border:"1px solid black",
+            color:"white",
+            position:"relative",
+            top:"50%"
+        },
     },
     "@media (min-width:1285px)":{
         span:{
@@ -54,6 +74,38 @@ const styles=makeStyles({
             backgroundColor:"black",
             fontSize:"40px",
             marginRight:"30px",
+            // border:"1px solid black",
+            color:"white",
+            position:"relative",
+            top:"50%"
+        },
+        span1:{
+            // backgroundColor:"white",
+            backgroundColor:"black",
+            fontSize:"40px",
+            marginRight:"30px",
+            // border:"1px solid black",
+            color:"white",
+            position:"relative",
+            top:"50%"
+        },
+    },
+    "@media (min-width:1500px)":{
+        span:{
+            // backgroundColor:"white",
+            backgroundColor:"black",
+            fontSize:"40px",
+            marginRight:"40px",
+            // border:"1px solid black",
+            color:"white",
+            position:"relative",
+            top:"50%"
+        },
+        span1:{
+            // backgroundColor:"white",
+            backgroundColor:"black",
+            fontSize:"40px",
+            marginRight:"120px",
             // border:"1px solid black",
             color:"white",
             position:"relative",
@@ -117,7 +169,7 @@ const Right = () => {
                     Skills.
                 </span>
                 <span 
-                    className={classes.span}
+                    className={classes.span1}
                     onClick={()=>{
                         set_about(false);
                         set_skills(false);
