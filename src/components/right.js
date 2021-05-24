@@ -34,7 +34,8 @@ const styles=makeStyles({
         color:"white",
         position:"absolute",
         top:"2%",
-        left:"25%"
+        left:"25%",
+        cursor:"pointer"
     },
     span1:{
         // backgroundColor:"white",

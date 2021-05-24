@@ -36,12 +36,13 @@
     margin: auto;
     display: flex;
     justify-content: center;
-    column-gap: 16%;
+    column-gap: 16.5%;
   }
   .about .label{
     margin: auto;
-    width:80%;
+    width:85%;
     margin-bottom: 70px;
+    column-gap: 2.5%;
   }
   .about .label h2{
     flex-grow: 1;

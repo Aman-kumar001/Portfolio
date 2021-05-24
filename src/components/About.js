@@ -18,13 +18,13 @@ const About = () => {
             <div>
                 <p className="icons">
                     <CodeIcon 
-                    style={{color:"#ff6a6a", fontSize:"90px"}}
+                    style={{color:"#ff6a6a", fontSize:"100px",marginLeft:"0.5%"}}
                     />
                     <LibraryBooksOutlinedIcon 
-                    style={{color:"#ff6a6a", fontSize:"90px"}}
+                    style={{paddingLeft:"1.5%",color:"#ff6a6a", fontSize:"100px"}}
                     />
                     <SportsSoccerIcon 
-                    style={{color:"#ff6a6a", fontSize:"90px"}}
+                    style={{color:"#ff6a6a", fontSize:"100px"}}
                     />
                 </p>
                 <p className="label">
