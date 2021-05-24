@@ -7,6 +7,8 @@ import challenge from "./media/chllange.jpg"
 import simon from "./media/simon.jpg"
 import phc from "./media/phc.jpg"
 import weather from "./media/weather.jpeg"
+import notes from "./media/notes.jpg"
+import todo from "./media/todo.jpg"
 
 const styles=makeStyles({
     button:{
@@ -44,7 +46,7 @@ const Projects = () => {
                 </Tilt>
                 <Tilt max="35" style={{color:"black"}}>
                 <div className="card">
-                    <img src={pic1} alt="p1" height="300px" className="pic"/>
+                    <img src={notes} alt="p1" height="300px" className="pic"/>
                     <div className="proj-dsc">
                         <p>Notes & Blogs</p>
                         <p>A platform whuch uses JSON server to create a Back-End space which stores articles written by user.</p>
@@ -134,7 +136,7 @@ const Projects = () => {
                 </Tilt>
                 <Tilt max="35" style={{color:"black"}}>
                 <div className="card">
-                    <img src={pic1} alt="p1" height="300px" className="pic"/>
+                    <img src={todo} alt="p1" height="300px" className="pic"/>
                     <div className="proj-dsc">
                         <p>To-Do list</p>
                         <p>Created Using ReactJs and Json Server specially for users with small devices like Smartphones.</p>

@@ -5,7 +5,6 @@ import Projects from "./projects";
 import Skills from "./skills";
 
 
-
 const styles=makeStyles({
     navbar:{
         width:"100%",
@@ -25,7 +24,8 @@ const styles=makeStyles({
         // border:"1px solid black",
         color:"white",
         position:"relative",
-        top:"50%"
+        top:"50%",
+        cursor:"pointer"
     },
     top:{
         backgroundColor:"black",
@@ -44,7 +44,8 @@ const styles=makeStyles({
         // border:"1px solid black",
         color:"white",
         position:"relative",
-        top:"50%"
+        top:"50%",
+        cursor:"pointer"
     },
     
     "@media (min-width: 960px)":{
@@ -56,7 +57,8 @@ const styles=makeStyles({
             // border:"1px solid black",
             color:"white",
             position:"relative",
-            top:"50%"
+            top:"50%",
+            cursor:"pointer"
         },
         span1:{
             // backgroundColor:"white",
@@ -66,7 +68,8 @@ const styles=makeStyles({
             // border:"1px solid black",
             color:"white",
             position:"relative",
-            top:"50%"
+            top:"50%",
+            cursor:"pointer"
         },
     },
     "@media (min-width:1285px)":{
@@ -78,7 +81,8 @@ const styles=makeStyles({
             // border:"1px solid black",
             color:"white",
             position:"relative",
-            top:"50%"
+            top:"50%",
+            cursor:"pointer"
         },
         span1:{
             // backgroundColor:"white",
@@ -88,7 +92,8 @@ const styles=makeStyles({
             // border:"1px solid black",
             color:"white",
             position:"relative",
-            top:"50%"
+            top:"50%",
+            cursor:"pointer"
         },
     },
     "@media (min-width:1500px)":{
@@ -100,7 +105,8 @@ const styles=makeStyles({
             // border:"1px solid black",
             color:"white",
             position:"relative",
-            top:"50%"
+            top:"50%",
+            cursor:"pointer"
         },
         span1:{
             // backgroundColor:"white",
@@ -110,7 +116,8 @@ const styles=makeStyles({
             // border:"1px solid black",
             color:"white",
             position:"relative",
-            top:"50%"
+            top:"50%",
+            cursor:"pointer"
         },
     },
 
@@ -193,7 +200,7 @@ const Right = () => {
                 </div>
                 <div className="intro">
                     { hoverAbout===false &&
-                    <div id="hello" className={(hoverSkills===true||hoverProjs==true)?"prev-move1":"prev"}>
+                    <div id={hoverSkills==true?"hovered":""} className={(hoverSkills===true||hoverProjs==true)?"prev-move1":"prev"}>
                         Hello,
                     </div>
                     }    
