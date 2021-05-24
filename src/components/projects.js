@@ -3,6 +3,10 @@ import pic1 from "./media/pic.jpg"
 import Fade from 'react-reveal/Fade';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import Tilt from 'react-vanilla-tilt';
+import challenge from "./media/chllange.jpg"
+import simon from "./media/simon.jpg"
+import phc from "./media/phc.jpg"
+import weather from "./media/weather.jpeg"
 
 const styles=makeStyles({
     button:{
@@ -24,7 +28,7 @@ const Projects = () => {
             <div class="row">
                 <Tilt max="35" style={{color:"black"}}>
                 <div className="card">
-                    <img src={pic1} alt="p1" height="300px" className="pic"/>
+                    <img src={phc} alt="p1" height="300px" className="pic"/>
                     <div className="proj-dsc">
                         <p>PHC Management System</p>
                         <p>A Full-Stack Project done with a idea to automate the functioning of PHC.</p>
@@ -58,7 +62,7 @@ const Projects = () => {
             <div class="row">
                 <Tilt max="35" style={{color:"black"}}>
                 <div className="card">
-                    <img src={pic1} alt="p1" height="300px" className="pic"/>
+                    <img src={weather} alt="p1" height="300px" className="pic"/>
                     <div className="proj-dsc">
                         <p>Weather App</p>
                         <p>A weather app which uses a open-weather api to fetch weather details.</p>
@@ -81,7 +85,7 @@ const Projects = () => {
                 </Tilt>
                 <Tilt max="35" style={{color:"black"}}>
                 <div className="card">
-                    <img src={pic1} alt="p1" height="300px" className="pic"/>
+                    <img src={simon} alt="p1" height="300px" className="pic"/>
                     <div className="proj-dsc">
                         <p>Simon's Game</p>
                         <p>Game to test Memory power built with  the help of JS,HTML, CSS and JQuery.</p>
@@ -107,7 +111,7 @@ const Projects = () => {
             <div class="row">
                 <Tilt max="35" style={{color:"black"}}>
                 <div className="card">
-                    <img src={pic1} alt="p1" height="300px" className="pic"/>
+                    <img src={challenge} alt="p1" height="300px" className="pic"/>
                     <div className="proj-dsc">
                         <p>Front-End Challenges</p>
                         <p>Front-End Mentor: A great platform to test your front end Skills with different challenges.</p>

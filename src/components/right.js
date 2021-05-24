@@ -27,6 +27,15 @@ const styles=makeStyles({
         position:"relative",
         top:"50%"
     },
+    top:{
+        backgroundColor:"black",
+        fontSize:"80px",
+        // border:"1px solid black",
+        color:"white",
+        position:"absolute",
+        top:"2%",
+        left:"25%"
+    },
     span1:{
         // backgroundColor:"white",
         backgroundColor:"black",
@@ -37,15 +46,7 @@ const styles=makeStyles({
         position:"relative",
         top:"50%"
     },
-    top:{
-        backgroundColor:"black",
-        fontSize:"80px",
-        // border:"1px solid black",
-        color:"white",
-        position:"absolute",
-        top:"2%",
-        left:"25%"
-    },
+    
     "@media (min-width: 960px)":{
         span:{
             // backgroundColor:"white",

@@ -215,7 +215,7 @@ a:hover {
   /* border: 1px solid white; */
   width:280px;
   margin: 0 auto;
-  margin-bottom: -100px;
+  margin-bottom: -200px;
   transform: scale(1,0);
   transform-origin: 100% 100%;
 }
