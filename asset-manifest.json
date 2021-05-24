@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7611c19d.chunk.css",
-    "main.js": "/portfolio/static/js/main.dd77cae9.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.dd77cae9.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.68a36e85.chunk.css",
+    "main.js": "/portfolio/static/js/main.0a26cd8c.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.0a26cd8c.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.43d9a0ba.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.43d9a0ba.js.map",
     "static/js/2.35c6b69c.chunk.js": "/portfolio/static/js/2.35c6b69c.chunk.js",
     "static/js/2.35c6b69c.chunk.js.map": "/portfolio/static/js/2.35c6b69c.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.7611c19d.chunk.css.map": "/portfolio/static/css/main.7611c19d.chunk.css.map",
+    "static/css/main.68a36e85.chunk.css.map": "/portfolio/static/css/main.68a36e85.chunk.css.map",
     "static/js/2.35c6b69c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.35c6b69c.chunk.js.LICENSE.txt",
     "static/media/index.css": "/portfolio/static/media/Lufga-Light.6ef28164.ttf",
     "static/media/chllange.e9c897c2.jpg": "/portfolio/static/media/chllange.e9c897c2.jpg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.43d9a0ba.js",
     "static/js/2.35c6b69c.chunk.js",
-    "static/css/main.7611c19d.chunk.css",
-    "static/js/main.dd77cae9.chunk.js"
+    "static/css/main.68a36e85.chunk.css",
+    "static/js/main.0a26cd8c.chunk.js"
   ]
 }
