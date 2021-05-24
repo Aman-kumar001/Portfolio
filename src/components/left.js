@@ -54,25 +54,25 @@ const Left = () => {
                 className={classes.typo}
                 variant="h6"
                 >
-                    <a href="mailto:2019200@iiitdmj.ac.in" style={{textDecoration:"none", color:"black"}}>2019200@iiitdmj.ac.in</a>
+                    <a target=" " href="mailto:2019200@iiitdmj.ac.in" style={{textDecoration:"none", color:"black"}}>2019200@iiitdmj.ac.in</a>
                 </Typography>
                 <Typography 
                 className={classes.typo}
                 variant="h6"
                 >
-                    <a href="mailto:2019200@iiitdmj.ac.in" style={{textDecoration:"none", color:"black"}}>2019200@iiitdmj.ac.in</a>
+                    <a target=" " href="mailto:2019200@iiitdmj.ac.in" style={{textDecoration:"none", color:"black"}}>2019200@iiitdmj.ac.in</a>
                 </Typography>
                 {/* <div className="contact">
                     <p></p>
                 </div> */}
                 <div className="links">
-                    <a href="https://www.linkedin.com/in/aman-kumar-316848192/" className="linkdin">
+                    <a target=" " href="https://www.linkedin.com/in/aman-kumar-316848192/" className="linkdin">
                         <LinkedInIcon fontSize="large"/>
                     </a>
-                    <a href="https://github.com/Aman-kumar001">
+                    <a target=" " href="https://github.com/Aman-kumar001">
                         <GitHubIcon fontSize="large"/>
                     </a>
-                    <a href="#">
+                    <a target=" " href="#">
                         <InstagramIcon 
                         fontSize="large"
                         />

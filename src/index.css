@@ -90,6 +90,7 @@ body {
 }
 
 .portfolio{
+  cursor:grabbing;
   margin-top: 10px;
   text-align: left;
 }

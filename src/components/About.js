@@ -9,7 +9,7 @@ const About = () => {
             <p className="heading">About Me</p>
             <div className="para">
                 <p>
-                    Hi, I am Aman Kumar student of <a href="https://www.iiitdmj.ac.in/">Indian Institute of Information Technology Jabalpur</a>, persuing B.Tech in Computer Science.<br/>
+                    Hi, I am Aman Kumar student of <a target="" href="https://www.iiitdmj.ac.in/">Indian Institute of Information Technology Jabalpur</a>, persuing B.Tech in Computer Science.<br/>
                     <br/>
                     Currently I am an Front-end enthusiast  Specialised in ReactJS with a goal to be a Full-stack Developer.<br/>
                 </p>
