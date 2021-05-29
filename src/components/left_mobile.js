@@ -14,7 +14,6 @@ const styles=makeStyles({
         fontStyle:"normal",
         color:"white"
     }
-
 })
 
 const LeftMobile = ({setMobleft}) => {

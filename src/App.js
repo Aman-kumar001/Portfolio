@@ -1,5 +1,6 @@
 import './App.css';
 import './mobileCss1.css';
+import './linksCss.css';
 import Right from './components/right';
 import Left from './components/left';
 import { useEffect, useState } from 'react';

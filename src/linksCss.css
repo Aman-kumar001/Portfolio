@@ -1,0 +1,99 @@
+/* Skills_MObile */
+
+.skills_mob{
+    /* border: 1px solid white; */
+    height:100px;
+    width: 100%;
+    color: white;
+    margin-bottom: 100px;
+    width: 100%;
+}
+#skillsHeader{
+    text-align: center;
+    font-size: 12vw;
+    margin-top: 20vw;
+    color: #ff6a6a;
+    
+}
+.mobContainer{
+    width:80vw;
+    margin: auto;
+    margin-top: 0;
+    padding: 3vw;
+    /* border: 1px solid white; */
+    font-family: "Lufga-Light";
+}
+.mobContainer p{
+    font-size: x-large;
+}
+.progress2 {
+    width:80vw;
+    padding: 1px;
+    border-radius: 30px;
+    background: white;  
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  }
+  
+  .progress-bar2 {
+    height: 2vw;
+    border-radius: 30px;
+    transition: 0.4s linear;  
+    transition-property: width, background-color;    
+  }
+  
+  .progress-moved .progress-bar2 {
+    width: 80%; 
+    background-color: #ff6a6a;  
+    animation: progressAnimation 3s;
+  }
+  
+  @keyframes progressAnimation {
+    0%   { width: 5%; background-color: #F9BCCA;}
+    100% { width: 80%; background-color: #EF476F; }
+  }
+  @keyframes progressAnimation2 {
+    0%   { width: 5%; background-color: #F9BCCA;}
+    100% { width: 70%; background-color: #EF476F; }
+  }
+  @keyframes progressAnimation3 {
+    0%   { width: 5%; background-color: #F9BCCA;}
+    100% { width: 60%; background-color: #EF476F; }
+  }
+  @keyframes progressAnimation4 {
+    0%   { width: 5%; background-color: #F9BCCA;}
+    100% { width: 75%; background-color: #EF476F; }
+  }
+  .progress-moved  .reactMob{ 
+    animation: progressAnimation2 3s;
+    width: 70%; 
+  }
+  .progress-moved  .cppMob{ 
+    animation: progressAnimation2 3s;
+    width: 60%; 
+  }
+  .progress-moved  .probMob{ 
+    animation: progressAnimation2 3s;
+    width: 75%; 
+  }
+
+
+  /*   About Mobile   */
+
+.aboutMob{
+    text-align: center;
+    margin-top: 20vw;
+    color:white;
+}
+.aboutMob p{
+    font-size: x-large;
+    font-family: "Lufga-Light";
+    margin:auto;
+    width:80%;
+}
+.aboutMob #aboutHeader{
+    color: #ff6a6a;
+    width:100%;
+    font-size: 12vw;
+    border: 1px solid white;
+    font-family: "Lufga";
+}
