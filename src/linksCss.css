@@ -5,15 +5,15 @@
     height:100px;
     width: 100%;
     color: white;
-    margin-bottom: 100px;
+    margin-bottom: -0px;
     width: 100%;
 }
 #skillsHeader{
     text-align: center;
     font-size: 12vw;
-    margin-top: 20vw;
+    margin-top: 10vw;
     color: #ff6a6a;
-    
+    margin-bottom: 20px;
 }
 .mobContainer{
     width:80vw;
@@ -41,11 +41,17 @@
     transition-property: width, background-color;    
   }
   
-  .progress-moved .progress-bar2 {
-    width: 80%; 
+  .progress-moved .progress-bar2 { 
     background-color: #ff6a6a;  
     animation: progressAnimation 3s;
   }
+  .progress-moved .htmlMob{ 
+      width: 80%;
+      background-color: #ff6a6a;  
+      animation: progressAnimation 3s;
+    
+  }
+  
   
   @keyframes progressAnimation {
     0%   { width: 5%; background-color: #F9BCCA;}
@@ -94,6 +100,61 @@
     color: #ff6a6a;
     width:100%;
     font-size: 12vw;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     font-family: "Lufga";
+    margin-bottom: 15vw;
 }
+#icons{
+  margin: auto;
+  margin-top: 10vw;
+  display: flex;
+  width:80%;
+}
+#icons p .iconsDsc{
+  font-size: 4vw;
+}
+/* projects Mobile */
+
+#projHeader{
+  text-align: center;
+  color: #ff6a6a;
+  width:100%;
+  font-size: 12vw;
+  /* border: 1px solid white; */
+  font-family: "Lufga";
+  margin-bottom: 15vw;
+}
+.picMob{
+  height:60vw;
+  border-radius: 10px;
+}
+.projMobDsc{
+  position: relative;
+  top:-25vw;
+  text-align: center;
+  color:white;
+  width:60vw;
+  word-break: normal;
+  background-color: #ff6a6a;
+  margin: auto;
+  border-radius: 10px;
+}
+.box{
+  text-align: center;
+}
+.moreMob{
+  text-align: center;
+  margin-bottom: 5vw;
+}
+.projMobDsc p:nth-child(1){
+  font-size: larger;
+  padding-top: 2vw;
+}
+.projMobDsc p:nth-child(2){
+  font-family: "Lufga-Light";
+  padding-top: 2vw;
+}
+.cardsMob{
+  margin-bottom: -15vw;
+}
+

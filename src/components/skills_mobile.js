@@ -7,7 +7,7 @@ const SkillsMobile = () => {
                 <div class="mobContainer">    
                 <p>Html / Css / JS</p>
                     <div class="progress2 progress-moved">
-                        <div class="progress-bar2" >
+                        <div class="progress-bar2 htmlMob">
                         </div>                       
                     </div> 
                 </div>
