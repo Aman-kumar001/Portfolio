@@ -148,6 +148,7 @@ const RightMobile = ({setMobleft}) => {
                     setNavClose(true)
                    }} 
                 />}
+                {nav==true && <div>
                 <p
                     onClick={()=>{
                         setSkills(false)
@@ -161,6 +162,7 @@ const RightMobile = ({setMobleft}) => {
                  }
                 >Home.</p>
                 <p
+                className={skills==true?"current":""}
                  onClick={()=>{
                         setSkills(true)
                         setAbout(false)
@@ -173,6 +175,7 @@ const RightMobile = ({setMobleft}) => {
                  }
                 >Skills.</p>
                 <p
+                className={about==true?"current":""}
                     onClick={()=>{
                         setSkills(false)
                         setAbout(true)
@@ -186,6 +189,7 @@ const RightMobile = ({setMobleft}) => {
                 >About.</p>
 
                 <p
+                className={projs==true?"current":""}
                     onClick={()=>{
                         setSkills(false)
                         setAbout(false)
@@ -197,6 +201,7 @@ const RightMobile = ({setMobleft}) => {
                     }
                  }
                 >Projects.</p>
+                </div>}
             </div>
             
             
