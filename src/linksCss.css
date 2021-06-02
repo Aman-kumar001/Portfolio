@@ -74,11 +74,11 @@
     width: 70%; 
   }
   .progress-moved  .cppMob{ 
-    animation: progressAnimation2 3s;
+    animation: progressAnimation3 3s;
     width: 60%; 
   }
   .progress-moved  .probMob{ 
-    animation: progressAnimation2 3s;
+    animation: progressAnimation4 3s;
     width: 75%; 
   }
 

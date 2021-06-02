@@ -83,3 +83,31 @@
 #navOpen .current{
     color: #ff6a6a; 
 }
+#mobLines{
+    position: fixed;
+    height: 50vh;
+    width: 50vw;
+    /* background-color:rgb(156, 156, 243); */
+    transform-origin: 100% 100%;
+    top: 40%;
+    left: 40%;
+    
+}
+.mobArcs{
+    height:100%;
+    width: 100%;
+}
+#mobLines svg{
+    position: absolute;
+    transform: scale(0);
+    animation: lines 0.4s ease-in forwards;
+    transform-origin: 100% 100%;
+}
+@keyframes lines{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

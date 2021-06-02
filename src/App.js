@@ -52,7 +52,7 @@ function App() {
        {mobLeft===true && <div><LeftMobile 
        setMobleft={setMobleft}  /> </div>} 
        {  mobLeft===false &&
-         <RightMobile setMobleft={setMobleft} />}
+         <RightMobile setMobleft={setMobleft} height={height} width={width} />}
       </>
     }
     </div>

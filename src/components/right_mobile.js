@@ -7,9 +7,10 @@ import SkillsMobile from './skills_mobile';
 import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar';
 import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 import RadioButtonCheckedIcon from '@material-ui/icons/RadioButtonChecked';
+import MoodIcon from '@material-ui/icons/Mood';
+import PersonAddIcon from '@material-ui/icons/PersonAdd';
 
-
-const RightMobile = ({setMobleft}) => {
+const RightMobile = ({setMobleft,height,width}) => {
 
     const [skills,setSkills]=useState(false);
     const [about,setAbout]=useState(false);
@@ -19,8 +20,25 @@ const RightMobile = ({setMobleft}) => {
     const [nav,setNav]=useState(false);
     const [navClose,setNavClose]=useState(false);
 
+    const str1="M"+Math.floor(width/2)+" "+Math.floor(height/2)+" A"+Math.floor(width/2)+" "+Math.floor(height/2)+" 0 0 0 0 2";
+    console.log(str1)
+    const str2="M"+Math.floor(width/2)+" "+Math.floor(height/2)+" A"+Math.floor(width/2)+" "+Math.floor(height/2)+" 0 0 0 0 "+(width/9+width/30) ;
+    const str3="M"+Math.floor(width/2)+" "+Math.floor(height/2)+" A"+Math.floor(width/2)+" "+Math.floor(height/2)+" 0 0 0 0 "+(width/5 + width/20) ;
+    
     return ( 
         <div className="rightMobile">
+            <PersonAddIcon 
+                style={{
+                    color:"white",
+                    fontSize:"3rem",
+                    position:"absolute",
+                    left:"2%",
+                    top:"2%",
+                    cursor:"pointer"
+                }}
+
+                onClick={()=>{setMobleft(true)}}
+            />
             { (skills==true||projs==true||about==true) &&<MenuIcon
                 style={{
                     color:"white",
@@ -36,7 +54,7 @@ const RightMobile = ({setMobleft}) => {
                 }
                 }
             />}
-            <svg className="phone" xmlns="http://www.w3.org/2000/svg" width="461.87" height="512.005" viewBox="0 0 461.87 512.005"
+            {/* <svg className="phone" xmlns="http://www.w3.org/2000/svg" width="461.87" height="512.005" viewBox="0 0 461.87 512.005"
 
             onClick={()=>setMobleft(true)}
             >
@@ -56,7 +74,7 @@ const RightMobile = ({setMobleft}) => {
                     <path id="Path_13" data-name="Path 13" d="M67.72,45.7s-2.15,8.47-2-5.76l-.87-11.39L62.7,20.18l.63-8.31S69,9.51,132,4.75A354.246,354.246,0,0,1,191.23,0S437.85,2.46,456.36,7.46c0,0-154.63-7.16-164.37-4.88,0,0,147.86,5.85,159.22,10.4,0,0-143.43-6.72-156.21-.91,0,0,132,6.17,148,11.94,0,0-25.31-2.3-32.1-1.59l11.82,1.72-19-.24-11-1.33s29.76,4,31.83,6c0,0,13.58-2.42-40.12-1.51C384.43,27.05,257.39,13.05,67.72,45.7Z" fill="#fff"/>
                     <path id="Path_14" data-name="Path 14" d="M279.69,224c.17.38-7.1,4.27-6-2.48a34.41,34.41,0,0,1-1.45-5.4c-1.38-1.29-2.26-3.32-3.08-4.89l2.26-3.2c-.87-1.21,4.39,4.17,12-3.85,3.42-4.46,2.42-16.82-5-32-3.77-7.39-8.87-17.93-14.81-25.76-5.89-8.3-11.09-5.22-20.47,5.81.29,0-7.09,8.19-9.29,26.54-2,18.21,0,46.06,14.44,73.61.86.35,9.11,26.5,42.82,57.19,25.72,30.15,94.52,64.84,128.52,25.8a35.11,35.11,0,0,0-.61-17.55c-1.46-5.73-4.11-7.09-10.79-11.86-10.7-6.67-27.79-13.59-37.11-14.3-3.3.25-4,.84-4.48,5.67-2.1,4.82,6,14.91-8.36,27.08-25.77,8-35.35-11.8-43.86-17-21.31-16.55-31.83-34.74-44.23-46.5-11.46-12.84-17-25.53-17.4-31.55-1.28.81,6.92,22.92,27.92,42.35,8.4,9.2,19.79,25.1,34.32,35.53,6.43,5.27,12.54,13.4,25,18,6.43,1.5,13.9,3.16,22.27-4.73,6.09-9.34,3.45-15.32,3.89-19.68.66-9.36.27-9.5,6.61-9.42,6.56,1,16.8,4.9,23.88,8.14a76.771,76.771,0,0,1,19.47,12.24c2.91,3,4.54,10.86,4.46,16.69,2.05,22.26-31.83,21.11-33.22,24.59-3.9-.49,25.23-2.73,32.18-15.4,3.08-8.41,3.1-25.71-8.74-31.14a97.622,97.622,0,0,0-21.75-11.18c-8.52-3.35-17.23-6.23-20.8-4.54-3.28.6-3.52,6.65-3.18,18.3,1.38,5.82-7.2,17-14.53,15.89-6.4,1-12.88-1.59-17.3-4.28-9-5.71-14.69-12.69-20.48-17.13a118.23,118.23,0,0,1-17.94-17.71c-18.67-22.18-34.89-39.67-35.87-46.32-.69.37,9.59,16.79,27.86,35.22,7.59,9.59,19.86,23.17,32.35,32.6,6.31,5.25,12.2,12.86,23.75,15.7,5.1.85,12.57,1.73,18-5.49,3.82-7,2.31-12.29,2.44-16.54-2.91-19.15,15.15-12.16,31.61-5.63,7.61,3.32,14.84,7.13,20.72,11.79,5.32,3.28,7,9.69,8,16.17,4.81,28.93-25.3,28.23-29.59,32.26-1.78-1.73,20.92-.26,30-17.3,3-9.32,2.86-26.26-8.13-33.59C404.47,296,388,288.79,373,285.75c-7.52-1.3-13.11,4.19-12.66,12.19-.2,3.92.44,8.25-.27,13,.24,5.16-6.3,10.26-10.82,9.29-20-1.23-27.48-18.46-39.4-25.74-19.41-21.12-33-37.89-37.7-44.14.2-.27,31.19,38,41.84,46a115.09,115.09,0,0,1-15.62-16.7c7.61,9.75,17.45,17,26.73,25.2,5.15,4.78,10.25,10,17.07,12.45-2.31,3.13-44-37.12-44.57-41.67,0,0-4.46-4.81-.47.22a123.71,123.71,0,0,0,14.59,15.89c4.31,3.79,10.75,8.63,17.35,14.85,5.57,5.68,18.46,14.1,25.85,6.27.22.24,1.35-2.78,1.06-10.27-2.12-5.62,2.47-25.68,20.15-20.81,13.92,3.88,31.64,9.31,47.53,23.57,6.55,8.56,8.3,20.84,5.65,32.6-2.81,12.91-17,18.46-29.57,21.59-25.87,12.08-57-1.21-85-15.89-14-8.4-26.9-19.89-39-32.43-12.61-11.88-25.52-25.89-34.12-42.73-18.82-31.76-32.83-75.36-14.31-118,6-9.71,11.93-20.61,28.36-23.47,18.82,1.08,23.18,16.71,29,24.91,5.44,9.6,11.34,19.89,14.63,32.61C303.39,194.93,301.84,219.68,279.69,224Z" fill="#fff"/>
                 </g>
-            </svg>
+            </svg> */}
 
             { main==true &&
             <div>
@@ -100,7 +118,22 @@ const RightMobile = ({setMobleft}) => {
                         }
                     >Projects</p>:<p>this Side.</p>}
                 </div>
-            
+                {button==true && 
+                    <div id="mobLines">
+                        <svg className="mobArcs">
+                            <path stroke="white"  strokeWidth="2px" fillOpacity="0" d={str1}/>
+                        </svg>
+                        <svg className="mobArcs">
+                            <path stroke="white"  strokeWidth="2px" fillOpacity="0" d={str2}/>
+                        </svg>
+                        <svg className="mobArcs">
+                            <path stroke="white"  strokeWidth="2px" fillOpacity="0" d={str3}/>
+                        </svg>
+                    </div>
+
+                }
+
+
                 {
                     button==false?
                     <RadioButtonUncheckedIcon 
@@ -125,7 +158,6 @@ const RightMobile = ({setMobleft}) => {
                     }}
                     onClick={()=>setButton(false)}
                     />
-                    
                 }
             </div>
             }
@@ -160,7 +192,7 @@ const RightMobile = ({setMobleft}) => {
                         setNavClose(true)
                     }
                  }
-                >Home.</p>
+                >Home</p>
                 <p
                 className={skills==true?"current":""}
                  onClick={()=>{
@@ -173,7 +205,7 @@ const RightMobile = ({setMobleft}) => {
                         setNavClose(true)
                     }
                  }
-                >Skills.</p>
+                >Skills</p>
                 <p
                 className={about==true?"current":""}
                     onClick={()=>{
@@ -186,7 +218,7 @@ const RightMobile = ({setMobleft}) => {
                         setNavClose(true)
                     }
                  }
-                >About.</p>
+                >About</p>
 
                 <p
                 className={projs==true?"current":""}
@@ -200,7 +232,7 @@ const RightMobile = ({setMobleft}) => {
                         setNavClose(true)
                     }
                  }
-                >Projects.</p>
+                >Projects</p>
                 </div>}
             </div>
             
