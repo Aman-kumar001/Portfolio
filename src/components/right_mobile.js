@@ -9,9 +9,25 @@ import RadioButtonCheckedIcon from '@material-ui/icons/RadioButtonChecked';
 import MoodIcon from '@material-ui/icons/Mood';
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+import { makeStyles } from '@material-ui/core';
+
+const styles=makeStyles({
+    "@keyframes arrow":{
+        "0%":{
+            translate: "-10px"
+        },
+        "100%":{
+            translate: "0px"
+        }
+    },
+    arrow:{
+        animation: "$arrow 0.5s ease-in-out infinite"
+    },
+    
+})
 
 const RightMobile = ({setMobleft,height,width}) => {
-
+    const classes=styles();
     const [skills,setSkills]=useState(false);
     const [about,setAbout]=useState(false);
     const [projs,setProjs]=useState(false);
@@ -122,7 +138,7 @@ const RightMobile = ({setMobleft,height,width}) => {
 
                 }
                 
-                {button==false && <ArrowRightIcon className="arrow" style={{color:"white",position:"absolute",top:"87vh",left:"80vw"}} />}
+                {button==false && <ArrowRightIcon className={classes.arrow} style={{color:"white",position:"absolute",top:"86.5vh",left:"80vw"}} />}
 
                 {
                     button==false?
