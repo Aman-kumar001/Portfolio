@@ -122,7 +122,7 @@ const RightMobile = ({setMobleft,height,width}) => {
 
                 }
                 
-                <ArrowRightIcon className="arrow" style={{color:"white",position:"absolute",top:"87vh",left:"80vw"}} />
+                {button==false && <ArrowRightIcon className="arrow" style={{color:"white",position:"absolute",top:"87vh",left:"80vw"}} />}
 
                 {
                     button==false?
