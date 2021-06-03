@@ -24,9 +24,9 @@ const RightMobile = ({setMobleft,height,width}) => {
 
     console.log(str1)
 
-    const str2="M"+Math.floor(0.9*width+7)+" "+Math.floor(0.9*height)+" A"+Math.floor(0.62*width)+" "+Math.floor(0.53*height)+" 0 0 0 "+(0.4* width)+" "+(0.41*height+0.04*width);
+    const str2="M"+Math.floor(0.9*width+7)+" "+Math.floor(0.9*height)+" A"+Math.floor(0.62*width)+" "+Math.floor(0.53*height)+" 0 0 0 "+(0.4* width)+" "+(0.41*height+0.09*width);
 
-    const str3="M"+Math.floor(0.9*width+7)+" "+Math.floor(0.9*height)+" A"+Math.floor(0.6*width)+" "+Math.floor(0.6*height)+" 0 0 0 "+(0.4 * width)+" "+(0.47*height+0.02*width);
+    const str3="M"+Math.floor(0.9*width+7)+" "+Math.floor(0.9*height)+" A"+Math.floor(0.6*width)+" "+Math.floor(0.6*height)+" 0 0 0 "+(0.4 * width)+" "+(0.47*height+0.13*width);
     
     return ( 
         <div className="rightMobile">
