@@ -37,7 +37,8 @@ const RightMobile = ({setMobleft,height,width}) => {
                     position:"absolute",
                     left:"2%",
                     top:"2%",
-                    cursor:"pointer"
+                    cursor:"pointer",
+                    zIndex:"100"
                 }}
 
                 onClick={()=>{setMobleft(true)}}
