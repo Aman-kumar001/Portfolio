@@ -5,6 +5,9 @@
     font-size: 7vw;
     margin-left: 10vw;
     margin-top: 10vw;
+    position: absolute;
+    top:30vh;
+    z-index: 100;
 }
 .greetings p{
     /* border: 1px solid white; */
@@ -19,7 +22,7 @@
     left:85vw;
 }
 .phone{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     transform-origin: 0 0;
     transform: scale(0.09);
     position: absolute;
@@ -81,17 +84,17 @@
     color: white;
 }
 #navOpen .current{
-    color: #ff6a6a; 
+    /* color: #ff6a6a;  */
+    color:black;
 }
 #mobLines{
     position: fixed;
-    height: 50vh;
-    width: 50vw;
-    /* background-color:rgb(156, 156, 243); */
+    top:0vh;
+    left:0vw;
+    height: 99vh;
+    width: 99vw;
+    /* background-color:rgba(156, 156, 243,0.3); */
     transform-origin: 100% 100%;
-    top: 40%;
-    left: 40%;
-    
 }
 .mobArcs{
     height:100%;

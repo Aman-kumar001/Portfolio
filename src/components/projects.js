@@ -1,3 +1,4 @@
+
 import { Button, makeStyles } from "@material-ui/core";
 import Fade from 'react-reveal/Fade';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
@@ -8,6 +9,10 @@ import phc from "./media/phc.jpg"
 import weather from "./media/weather.jpeg"
 import notes from "./media/notes.jpg"
 import todo from "./media/todo.jpg"
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
 
 const styles=makeStyles({
     button:{
@@ -26,7 +31,7 @@ const Projects = () => {
     return ( 
         <div className="projs">
             <p className="heading">Projects</p> 
-            <div class="row">
+            <div className="row" data-aos="fade-right">
                 <Tilt max="35" style={{color:"black"}}>
                 <div className="card">
                     <img src={phc} alt="p1" height="300px" className="pic"/>
@@ -60,7 +65,7 @@ const Projects = () => {
                 </div>
                 </Tilt>
             </div>
-            <div class="row">
+            <div className="row" data-aos="fade-left">
                 <Tilt max="35" style={{color:"black"}}>
                 <div className="card">
                     <img src={weather} alt="p1" height="300px" className="pic"/>
@@ -109,7 +114,7 @@ const Projects = () => {
                 </Tilt>
                 
             </div>
-            <div class="row">
+            <div className="row" data-aos="fade-right">
                 <Tilt max="35" style={{color:"black"}}>
                 <div className="card">
                     <img src={challenge} alt="p1" height="300px" className="pic"/>
@@ -151,7 +156,6 @@ const Projects = () => {
                 </Tilt>
                 
             </div>
-            <Fade right delay={1000}>
             <div className="moreProjs">
                 <a target=" " href="https://github.com/Aman-kumar001" >
                 <Button
@@ -159,7 +163,6 @@ const Projects = () => {
                 variant="outlined" color="inherit">More Projects <ArrowRightIcon/></Button>
                 </a>
             </div>
-            </Fade>
         </div>         
     );
     

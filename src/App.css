@@ -173,7 +173,7 @@ a:hover {
 /* PROJECTS PAGE */
 
 .projs{
-  animation: appear 1s forwards;
+  /* animation: appear 1s forwards; */
   transform-origin: 0 0;
 }
 .pics{

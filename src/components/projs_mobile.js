@@ -6,6 +6,9 @@ import notes from "./media/notes.jpg"
 import todo from "./media/todo.jpg"
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import { Button, makeStyles } from "@material-ui/core";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const styles=makeStyles({
     button:{
@@ -27,8 +30,8 @@ const ProjsMob = () => {
     return ( 
     <div className="projsMob">
         <p id="projHeader">Projects</p>
-        <div className="cardsMob">
-            <div className="box">
+        <div className="cardsMob" data-aos="fade-right">
+            <div className="box" >
                 <img src={phc} alt="" className="picMob"/>
                 <div className="projMobDsc">
                     <p>PHC Management System</p>
@@ -43,7 +46,7 @@ const ProjsMob = () => {
                 </div>
             </div>
         </div>
-        <div className="cardsMob">
+        <div className="cardsMob" data-aos="fade-left">
             <div className="box">
             <img src={weather} alt="" className="picMob"/>
             <div className="projMobDsc">
@@ -66,7 +69,7 @@ const ProjsMob = () => {
             </div>
             </div>
         </div>
-        <div className="cardsMob">
+        <div className="cardsMob" data-aos="fade-right">
             <div className="box">
             <img src={phc} alt="" className="picMob"/>
             <div className="projMobDsc">
