@@ -4,11 +4,11 @@ import { useState } from 'react';
 import AboutMobile from './about_mobile';
 import ProjsMob from './projs_mobile';
 import SkillsMobile from './skills_mobile';
-import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar';
 import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 import RadioButtonCheckedIcon from '@material-ui/icons/RadioButtonChecked';
 import MoodIcon from '@material-ui/icons/Mood';
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
+import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
 const RightMobile = ({setMobleft,height,width}) => {
 
@@ -121,7 +121,8 @@ const RightMobile = ({setMobleft,height,width}) => {
                     </div>
 
                 }
-
+                
+                <ArrowRightIcon className="arrow" style={{color:"white",position:"absolute",top:"87vh",left:"80vw"}} />
 
                 {
                     button==false?
