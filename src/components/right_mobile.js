@@ -20,13 +20,13 @@ const RightMobile = ({setMobleft,height,width}) => {
     const [nav,setNav]=useState(false);
     const [navClose,setNavClose]=useState(false);
 
-    const str1="M"+Math.floor(0.9 * width+7)+" "+Math.floor(0.9 * height)+" A"+Math.floor(0.6 * width)+" "+Math.floor(0.5*height)+" 0 0 0 "+(0.4 * width)+" "+(0.35*height + 0.1*width -15 );
+    const str1="M"+Math.floor(0.9 * width+7)+" "+Math.floor(0.9 * height)+" A"+Math.floor(0.6 * width)+" "+Math.floor(0.5*height)+" 0 0 0 "+(0.4 * width)+" "+(0.35*height + 0.1*width -5 );
 
     console.log(str1)
 
-    const str2="M"+Math.floor(0.9*width+7)+" "+Math.floor(0.9*height)+" A"+Math.floor(0.62*width)+" "+Math.floor(0.53*height)+" 0 0 0 "+(0.4* width)+" "+(0.41*height+0.09*width);
+    const str2="M"+Math.floor(0.9*width+7)+" "+Math.floor(0.9*height)+" A"+Math.floor(0.62*width)+" "+Math.floor(0.53*height)+" 0 0 0 "+(0.4* width)+" "+(0.41*height+0.1*width);
 
-    const str3="M"+Math.floor(0.9*width+7)+" "+Math.floor(0.9*height)+" A"+Math.floor(0.6*width)+" "+Math.floor(0.6*height)+" 0 0 0 "+(0.4 * width)+" "+(0.47*height+0.13*width);
+    const str3="M"+Math.floor(0.9*width+7)+" "+Math.floor(0.9*height)+" A"+Math.floor(0.6*width)+" "+Math.floor(0.6*height)+" 0 0 0 "+(0.4 * width)+" "+(0.47*height+0.11*width);
     
     return ( 
         <div className="rightMobile">
@@ -72,6 +72,7 @@ const RightMobile = ({setMobleft,height,width}) => {
                 <div className="greetings">
                     {button==true? 
                     <p
+                        className="fadeIn"
                         onClick={()=>{
                             setSkills(false)
                             setAbout(true)
@@ -83,6 +84,7 @@ const RightMobile = ({setMobleft,height,width}) => {
                     >About</p>:<p>Hello,</p>}
                     {button==true? 
                     <p
+                    className="fadeIn"
                     onClick={()=>{
                         setSkills(true)
                         setAbout(false)
@@ -94,6 +96,7 @@ const RightMobile = ({setMobleft,height,width}) => {
                     >Skills</p>:<p>Aman Kumar</p>}
                     {button==true? 
                     <p
+                        className="fadeIn"
                             onClick={()=>{
                                 setSkills(false)
                                 setAbout(false)
