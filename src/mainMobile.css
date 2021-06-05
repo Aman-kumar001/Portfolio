@@ -94,7 +94,9 @@
     height: 99vh;
     width: 99vw;
     /* background-color:rgba(156, 156, 243,0.3); */
+    
     transform-origin: 100% 100%;
+    z-index: -1;
 }
 .mobArcs{
     height:100%;
@@ -102,18 +104,68 @@
 }
 #mobLines svg{
     position: absolute;
-    opacity: 0;
-    animation: lines 0.3s ease-in forwards;
-    transform-origin: 100% 100%;
 }
-@keyframes lines{
+/* .fadeIn{
+    animation: lines 0.3s ease-in forwards;
+} */
+
+/* @keyframes lines{
     0%{
-        opacity: 0;
+        color:rgb(241, 241, 137);
     }
     100%{
-        opacity: 1;
+        color:white;
     }
+} */
+
+.bulbOff1{
+    position: absolute;
+    top:48vh;
+    left:63.5vw;
+    transform: rotateZ(180deg)
 }
-.fadeIn{
-    animation: lines 0.3s ease-in forwards;
+.bulbOff2{
+    position: absolute;
+    top:38vh;
+    left:73.5vw;
+    transform: rotateZ(180deg)
+}
+.bulbOn1{
+    position: absolute;
+    top:48vh;
+    left:63.5vw;
+    transform: rotateZ(180deg)
+}
+.bulbOn2{
+    position: absolute;
+    top:38vh;
+    left:73.5vw;
+    transform: rotateZ(180deg);
+}
+.light{
+    transform-origin: 50% 50%;
+    position:absolute;
+    height: 30vh;
+    width: 30vh;
+    top:35vh;
+    left:37vw;
+    border-radius: 50%;
+    background: -webkit-radial-gradient(rgba(255,223,67,0.4), rgba(255,223,67,0) 70%);
+}
+.bulbOn1 ::before{
+    content: "";
+    height: 1vh;
+    width: 1vh;
+    background-color: white;
+    border: 1px solid white;
+}
+.light2{
+    position:absolute;
+    height: 30vh;
+    width: 30vh;
+    transform-origin: 0 0;
+    top:24vh;
+    left:51vw;
+    border-radius: 50%;
+    background: -webkit-radial-gradient(rgba(255,223,67,0.5), rgba(255,223,67,0) 70%);
 }

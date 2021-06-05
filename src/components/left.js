@@ -60,7 +60,7 @@ const Left = () => {
                 className={classes.typo}
                 variant="h6"
                 >
-                    <a target=" " href="mailto:2019200@iiitdmj.ac.in" style={{textDecoration:"none", color:"black"}}>2019200@iiitdmj.ac.in</a>
+                    <a target=" " href="mailto:2019200@iiitdmj.ac.in" style={{textDecoration:"none", color:"black"}}>fly.01.higher@gmail.com</a>
                 </Typography>
                 {/* <div className="contact">
                     <p></p>

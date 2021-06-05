@@ -36,13 +36,6 @@ const RightMobile = ({setMobleft,height,width}) => {
     const [nav,setNav]=useState(false);
     const [navClose,setNavClose]=useState(false);
 
-    const str1="M"+Math.floor(0.9 * width+7)+" "+Math.floor(0.9 * height)+" A"+Math.floor(0.6 * width)+" "+Math.floor(0.5*height)+" 0 0 0 "+(0.4 * width)+" "+(0.35*height + 0.1*width -5 );
-
-    console.log(str1)
-
-    const str2="M"+Math.floor(0.9*width+7)+" "+Math.floor(0.9*height)+" A"+Math.floor(0.62*width)+" "+Math.floor(0.53*height)+" 0 0 0 "+(0.4* width)+" "+(0.41*height+0.1*width);
-
-    const str3="M"+Math.floor(0.9*width+7)+" "+Math.floor(0.9*height)+" A"+Math.floor(0.6*width)+" "+Math.floor(0.6*height)+" 0 0 0 "+(0.4 * width)+" "+(0.47*height+0.11*width);
     
     return ( 
         <div className="rightMobile">
@@ -123,21 +116,35 @@ const RightMobile = ({setMobleft,height,width}) => {
                         }
                     >Projects</p>:<p>this Side.</p>}
                 </div>
-                {button==true && 
+                {
                     <div id="mobLines">
+                        <div className={button==true?"light":""}>
+
+                        </div>
+                        <div className={button==true?"light2":""}>
+
+                        </div>
                         <svg className="mobArcs">
-                            <path stroke="#ff6a6a"  strokeWidth="3px" fillOpacity="0" d={str1}/>
+                            <line x1={0.7*width} y1="0" x2={0.7*width} y2={0.5*height} stroke="gray" strokeWidth="3px"/>
                         </svg>
                         <svg className="mobArcs">
-                            <path stroke="#ff6a6a"  strokeWidth="3px" fillOpacity="0" d={str2}/>
-                        </svg>
-                        <svg className="mobArcs">
-                            <path stroke="#ff6a6a"  strokeWidth="3px" fillOpacity="0" d={str3}/>
+                            <line x1={0.8*width} y1="0" x2={0.8*width} y2={0.4*height} stroke="gray" strokeWidth="3px"/>
                         </svg>
                     </div>
 
                 }
-                
+                {button==true && <svg className="bulbOn1" xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 0 24 24" width="50px" fill="yellow"><path d="M0 0h24v24H0z" fill="none"/><path d="M9 21c0 .5.4 1 1 1h4c.6 0 1-.5 1-1v-1H9v1zm3-19C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V17c0 .5.4 1 1 1h6c.6 0 1-.5 1-1v-2.3c1.8-1.3 3-3.4 3-5.7 0-3.9-3.1-7-7-7z"/></svg>}
+                {button==true && <svg className="bulbOn2" xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 0 24 24" width="50px" fill="yellow"><path d="M0 0h24v24H0z" fill="none"/><path d="M9 21c0 .5.4 1 1 1h4c.6 0 1-.5 1-1v-1H9v1zm3-19C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V17c0 .5.4 1 1 1h6c.6 0 1-.5 1-1v-2.3c1.8-1.3 3-3.4 3-5.7 0-3.9-3.1-7-7-7z"/></svg>}
+
+                {
+                    button==false &&
+                    <svg className="bulbOff1" xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 0 24 24" width="50px" fill="white"><path d="M0 0h24v24H0z" fill="none"/><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/></svg>
+                }
+                {
+                    button==false &&
+                    <svg className="bulbOff2" xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 0 24 24" width="50px" fill="white"><path d="M0 0h24v24H0z" fill="none"/><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/></svg>
+                }
+
                 {button==false && <ArrowRightIcon className={classes.arrow} style={{color:"white",position:"absolute",top:"86.5vh",left:"80vw"}} />}
 
                 {
