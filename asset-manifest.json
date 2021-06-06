@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7da142ed.chunk.css",
+    "main.css": "/portfolio/static/css/main.bc03321b.chunk.css",
     "main.js": "/portfolio/static/js/main.6c755d23.chunk.js",
     "main.js.map": "/portfolio/static/js/main.6c755d23.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.43d9a0ba.js",
@@ -10,7 +10,7 @@
     "static/js/2.4f6a7092.chunk.js.map": "/portfolio/static/js/2.4f6a7092.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.7fc9bc2b.chunk.css.map": "/portfolio/static/css/2.7fc9bc2b.chunk.css.map",
-    "static/css/main.7da142ed.chunk.css.map": "/portfolio/static/css/main.7da142ed.chunk.css.map",
+    "static/css/main.bc03321b.chunk.css.map": "/portfolio/static/css/main.bc03321b.chunk.css.map",
     "static/js/2.4f6a7092.chunk.js.LICENSE.txt": "/portfolio/static/js/2.4f6a7092.chunk.js.LICENSE.txt",
     "static/media/index.css": "/portfolio/static/media/Lufga-Light.6ef28164.ttf",
     "static/media/chllange.e9c897c2.jpg": "/portfolio/static/media/chllange.e9c897c2.jpg",
@@ -25,7 +25,7 @@
     "static/js/runtime-main.43d9a0ba.js",
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.4f6a7092.chunk.js",
-    "static/css/main.7da142ed.chunk.css",
+    "static/css/main.bc03321b.chunk.css",
     "static/js/main.6c755d23.chunk.js"
   ]
 }
