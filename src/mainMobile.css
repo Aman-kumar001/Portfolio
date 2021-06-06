@@ -147,25 +147,97 @@
     position:absolute;
     height: 30vh;
     width: 30vh;
-    top:35vh;
-    left:37vw;
+    top:36vh;
+    left:32vw;
     border-radius: 50%;
-    background: -webkit-radial-gradient(rgba(255,223,67,0.4), rgba(255,223,67,0) 70%);
-}
-.bulbOn1 ::before{
-    content: "";
-    height: 1vh;
-    width: 1vh;
-    background-color: white;
-    border: 1px solid white;
+    /* background: -webkit-radial-gradient(rgba(255,223,67,0.4), rgba(255,223,67,0) 70%); */
+    animation: blink 3s ease-in-out forwards;
 }
 .light2{
     position:absolute;
     height: 30vh;
     width: 30vh;
     transform-origin: 0 0;
-    top:24vh;
-    left:51vw;
+    top:25vh;
+    left:47vw;
     border-radius: 50%;
     background: -webkit-radial-gradient(rgba(255,223,67,0.5), rgba(255,223,67,0) 70%);
+    /* animation: blink 3s ease-in-out forwards; */
 }
+.bulbOn{
+    animation: color 3s ease-in-out forwards;
+}
+@keyframes color{
+    0%{
+        fill:black;
+    }
+    15%{
+        fill:yellow;
+    }
+    30%{
+        fill:black;
+    }
+    70%{
+        fill:yellow;
+    }
+    100%{
+        fill: yellow;
+    }
+}
+@keyframes blink{
+    0%{
+        background:black;
+    }
+    15%{
+        background: -webkit-radial-gradient(rgba(255,223,67,0.5), rgba(255,223,67,0) 70%);
+    }
+    30%{
+        background:black;
+    }
+    70%{
+        background: -webkit-radial-gradient(rgba(255,223,67,0.5), rgba(255,223,67,0) 70%);
+    }
+    
+    100%{
+        background: -webkit-radial-gradient(rgba(255,223,67,0.5), rgba(255,223,67,0) 70%);
+    }
+}
+.trial1{
+    position: absolute;
+    top:0;
+    left:60vw;
+    z-index:-1;
+    /* border: 1px solid white; */
+    height:80vh;
+    width:50px;
+}
+.Off1{
+    transform: rotateZ(180deg);
+    position: relative;
+    top:-35vh
+}
+.On1{
+    transform: rotateZ(180deg);
+    position: relative;
+    top:-35vh
+}
+.trial2{
+    position: absolute;
+    z-index: -1;
+    top:0;
+    left:70vw;
+    /* border: 1px solid white; */
+    height:80vh;
+    width:50px;
+}
+.Off2{
+    transform: rotateZ(180deg);
+    position: relative;
+    top:-44vh
+}
+.On2{
+    transform: rotateZ(180deg);
+    position: relative;
+    top:-44vh
+}
+
